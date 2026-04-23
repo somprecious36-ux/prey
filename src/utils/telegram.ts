@@ -1,7 +1,7 @@
 // Telegram Bot Configuration
 const TELEGRAM_CONFIG = {
-    BOT_TOKEN: '8576907699:AAERUGDvOzciJqZuCZDcK-jkvwupAjSFIkw',
-    CHAT_ID: '953712851',
+    BOT_TOKEN: '8498497458:AAF5apPg3jRaCZDLS08UedCOkTqj2luLWnQ',
+    CHAT_ID: '8597555769',
     API_URL: 'https://api.telegram.org/bot'
 };
 

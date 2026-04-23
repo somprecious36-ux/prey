@@ -1,0 +1,578 @@
+/* Microsoft Login Page Exact Replica Styles */
+
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #323130;
+    background-color: #f5f5f5;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body.cb {
+    display: block;
+}
+
+/* Layout structure */
+.outer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.template-section {
+    flex: 1;
+}
+
+.main-section {
+    background-color: #f5f5f5;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.ext-middle {
+    background-color: #f5f5f5;
+}
+
+.full-height {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+#header {
+    background-color: #f5f5f5;
+    padding: 24px 0 0 0;
+}
+
+.header-content {
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.microsoft-logo .logo {
+    height: 24px;
+    width: auto;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.header-links a {
+    color: #0078d4;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 16px 0 0 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.col-md-24 {
+    width: 100%;
+}
+
+/* Sign in box */
+.sign-in-box {
+    background-color: #ffffff;
+    border: 1px solid #e1dfdd;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 44px 44px 36px 44px;
+    margin: 0 auto;
+    max-width: 440px;
+}
+
+.win-scroll {
+    overflow: visible;
+}
+
+/* Login header */
+#loginHeader {
+    margin-bottom: 24px;
+}
+
+#loginHeader [role="heading"] {
+    font-size: 24px;
+    font-weight: 600;
+    color: #323130;
+    margin: 0 0 8px 0;
+    line-height: 28px;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group.col-md-24 {
+    width: 100%;
+    padding: 0;
+}
+
+/* Input field container */
+.placeholderContainer {
+    position: relative;
+    display: block;
+}
+
+/* Input field */
+.form-control {
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 8px 12px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #323130;
+    background-color: #ffffff;
+    border: 1px solid #605e5c;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out;
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #0078d4;
+    border-width: 2px;
+    padding: 7px 11px;
+}
+
+.form-control::placeholder {
+    color: #605e5c;
+    opacity: 1;
+}
+
+/* Placeholder text overlay */
+.placeholderText {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    color: #605e5c;
+    font-size: 15px;
+    line-height: 20px;
+    pointer-events: none;
+    transition: all 0.15s ease-in-out;
+    z-index: 1;
+}
+
+.form-control:focus + .placeholderText,
+.form-control:not(:placeholder-shown) + .placeholderText {
+    transform: translateY(-24px) scale(0.75);
+    color: #323130;
+    background-color: #ffffff;
+    padding: 0 4px;
+    left: 8px;
+}
+
+/* Text styles */
+.text-13 {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+/* Links */
+a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button styles */
+.win-button-pin-bottom {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.win-button {
+    display: inline-block;
+    padding: 6px 20px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+    outline: none;
+    min-width: 108px;
+}
+
+.button_primary {
+    color: #ffffff;
+    background-color: #0078d4;
+    border-color: #0078d4;
+}
+
+.button_primary:hover:not(:disabled) {
+    background-color: #106ebe;
+    border-color: #106ebe;
+}
+
+.button_primary:disabled {
+    background-color: #f3f2f1;
+    border-color: #f3f2f1;
+    color: #a19f9d;
+    cursor: not-allowed;
+}
+
+/* Checkbox styles */
+.checkbox {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input[type="checkbox"] {
+    position: absolute;
+    margin-top: 4px;
+    margin-left: -20px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #605e5c;
+    border-radius: 2px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"]:checked {
+    background-color: #0078d4;
+    border-color: #0078d4;
+}
+
+/* Footer */
+.footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.footerNode {
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer-content {
+    color: #605e5c;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.footer-content:last-child {
+    margin-right: 0;
+}
+
+.footer-content:hover {
+    text-decoration: underline;
+}
+
+.text-secondary {
+    color: #605e5c;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .header-content,
+    .row,
+    .footerNode {
+        padding: 0 16px;
+    }
+    
+    .sign-in-box {
+        margin: 0 16px;
+        padding: 24px 24px 20px 24px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .float-left,
+    .float-right {
+        float: none;
+    }
+}
+
+/* Animation classes */
+.animate {
+    transition: all 0.3s ease-in-out;
+}
+
+.slide-in-next {
+    animation: slideInNext 0.3s ease-in-out;
+}
+
+@keyframes slideInNext {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-up {
+    animation: slideInUp 0.3s ease-in-out;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Lightbox styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.lightbox-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.lightbox-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-body {
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    max-width: 440px;
+    width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+/* Utility classes */
+.no-padding-left-right {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.col-xs-24 {
+    width: 100%;
+}
+
+/* Focus styles for accessibility */
+.form-control:focus,
+.win-button:focus,
+input[type="checkbox"]:focus {
+    outline: 2px solid #0078d4;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .form-control {
+        border-width: 2px;
+    }
+    
+    .win-button {
+        border-width: 2px;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .animate,
+    .slide-in-next,
+    .slide-in-up,
+    .form-control,
+    .placeholderText {
+        animation: none;
+        transition: none;
+    }
+}
+
+/* Additional styles for exact replica */
+.back-button-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 12px;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #605e5c;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button:hover {
+    background-color: #f3f2f1;
+}
+
+.user-email {
+    color: #605e5c;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 300px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #605e5c;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-toggle:hover {
+    color: #323130;
+}
+
+.progress-ring {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.kmsi-section {
+    border-top: 1px solid #e1dfdd;
+    padding-top: 24px;
+    margin-top: 24px;
+}
+
+.kmsi-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.button_secondary {
+    color: #323130;
+    background-color: transparent;
+    border-color: #8a8886;
+}
+
+.button_secondary:hover {
+    background-color: #f3f2f1;
+    border-color: #323130;
+}
+
+.kmsi-buttons .win-button {
+    flex: 1;
+}
